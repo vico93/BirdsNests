@@ -29,7 +29,7 @@ public class NestItem extends Item {
             )
     );
 
-    public NestItem(Settings settings) {
+    public NestItem(net.minecraft.item.Item.Settings settings) {
         super(settings);
     }
 
