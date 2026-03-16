@@ -34,3 +34,6 @@ run/
 
 src/main/generated/.cache
 src/main/generated/.cache/**
+
+# Vibecode stuff
+/.ai

@@ -1,8 +1,8 @@
 package daniking.birdsnests;
 
 import com.google.common.base.Suppliers;
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
+// import me.shedaniel.autoconfig.AutoConfig;
+// import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.core.Registry;
@@ -72,18 +72,18 @@ public class BirdsNests implements ModInitializer {
     static LootPool buildLoot() {
         return LootPool.lootPool()
                 .setRolls(ConstantValue.exactly(1))
-                .conditionally(LootItemRandomChanceCondition.randomChance((float) config.nestDropChance).build())
-                .with(LootItem.lootTableItem(NEST_ITEM).build())
+                .when(LootItemRandomChanceCondition.randomChance(0.050f /* (float) config.nestDropChance */).build())
+                .add(LootItem.lootTableItem(NEST_ITEM).build())
                 .build();
     }
 
     static {
-        AutoConfig.register(Config.class, GsonConfigSerializer::new);
-        config = AutoConfig.getConfigHolder(Config.class).getConfig();
+        // AutoConfig.register(Config.class, GsonConfigSerializer::new);
+        // config = AutoConfig.getConfigHolder(Config.class).getConfig();
         NEST_ITEM = new NestItem(
                 new Item.Properties()
                         .stacksTo(
-                                config.maxCount
+                                64 // config.maxCount
                         )
                         .setId(NEST_ITEM_KEY)
         );
