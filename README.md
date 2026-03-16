@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# Birds Nests
 
-## Setup
+Birds nests drop randomly from leaves and give you rewards!
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## DISCLAIMER
+**This is a vibecoded fork! If you dislike AI or simply don't trust them, don't use it!**
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## History
+Basically this is the tip of a huge tree of forks inspired by [the original mod](https://www.curseforge.com/minecraft/mc-mods/birds-nests) from Forge 1.12.2. This time i attempted to port this mod to **26.1** with help of Gemini and Antigravity.
